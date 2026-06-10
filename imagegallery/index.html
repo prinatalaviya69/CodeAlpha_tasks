@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Image Gallery</h1>
+    <p>Explore photos by category</p>
+  </header>
+
+  <div class="filter-buttons">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="city">City</button>
+    <button data-filter="animals">Animals</button>
+  </div>
+
+  <section class="gallery">
+    <img src="https://picsum.photos/id/1015/600/400" data-category="nature" alt="Nature">
+    <img src="https://picsum.photos/id/1011/600/400" data-category="animals" alt="Animal">
+    <img src="https://picsum.photos/id/1016/600/400" data-category="nature" alt="Nature">
+    <img src="https://picsum.photos/id/1012/600/400" data-category="city" alt="City">
+    <img src="https://picsum.photos/id/1025/600/400" data-category="animals" alt="Animal">
+    <img src="https://picsum.photos/id/1031/600/400" data-category="city" alt="City">
+    <img src="https://picsum.photos/id/1043/600/400" data-category="nature" alt="Nature">
+    <img src="https://picsum.photos/id/1067/600/400" data-category="city" alt="City">
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <button class="prev">&#10094;</button>
+    <img id="lightbox-img" src="" alt="Large preview">
+    <button class="next">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
